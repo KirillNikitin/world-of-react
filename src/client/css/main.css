@@ -1,0 +1,88 @@
+.table>tbody>tr>td,
+.table>tbody>tr>th,
+.table>tfoot>tr>td,
+.table>tfoot>tr>th,
+.table>thead>tr>td,
+.table>thead>tr>th {
+    padding: 5px 7px;
+    border: none;
+    height: 50px;
+    vertical-align: middle;
+}
+.table-striped>tbody>tr:nth-of-type(odd) {
+    background-color: #eef3f9;
+}
+.table>tbody>tr>td:nth-last-child(2),
+.table>tbody>tr>th:nth-last-child(2),
+.table>tfoot>tr>td:nth-last-child(2),
+.table>tfoot>tr>th:nth-last-child(2),
+.table>thead>tr>td:nth-last-child(2),
+.table>thead>tr>th:nth-last-child(2) {
+    width:30px;
+}
+.table>tbody>tr>td:last-child,
+.table>tbody>tr>th:last-child,
+.table>tfoot>tr>td:last-child,
+.table>tfoot>tr>th:last-child,
+.table>thead>tr>td:last-child,
+.table>thead>tr>th:last-child {
+    width:30px;
+}
+.table>tbody>tr>td:first-child,
+.table>tbody>tr>th:first-child,
+.table>tfoot>tr>td:first-child,
+.table>tfoot>tr>th:first-child,
+.table>thead>tr>td:first-child,
+.table>thead>tr>th:first-child {
+    width:200px;
+}
+.table>tbody>tr>td:nth-child(2),
+.table>tbody>tr>th:nth-child(2),
+.table>tfoot>tr>td:nth-child(2),
+.table>tfoot>tr>th:nth-child(2),
+.table>thead>tr>td:nth-child(2),
+.table>thead>tr>th:nth-child(2) {
+    width:300px;
+}
+.table>tbody>tr>td:nth-child(3),
+.table>tbody>tr>th:nth-child(3),
+.table>tfoot>tr>td:nth-child(3),
+.table>tfoot>tr>th:nth-child(3),
+.table>thead>tr>td:nth-child(3),
+.table>thead>tr>th:nth-child(3) {
+    width:300px;
+}
+.table>tbody>tr>td:nth-child(4),
+.table>tbody>tr>th:nth-child(4),
+.table>tfoot>tr>td:nth-child(4),
+.table>tfoot>tr>th:nth-child(4),
+.table>thead>tr>td:nth-child(4),
+.table>thead>tr>th:nth-child(4) {
+    width: 100px;
+}
+.table>tbody>tr>td input {
+    height: 100%;
+    width: 100%;
+}
+/*table.user-list {background-color: #eef3f9;}*/
+.btn-edit, .btn-delete, .btn-save {
+    width: 31px;
+    height: 31px;
+    outline: none;
+    border: none;
+}
+.btn-edit {
+    background: url('../i/edit.png');
+}
+.btn-edit:hover {
+    background: url('../i/edit-hh.png');
+}
+.btn-delete {
+    background: url('../i/delete.png')
+}
+.btn-delete:hover {
+    background: url('../i/delete-h.png')
+}
+.btn-save {
+    background: url('../i/save.png')
+}
