@@ -6,7 +6,7 @@ class NumberInput extends React.Component {
     }
 
     render(){
-        return <input onChange={this.onChangeHandler.bind(this)} type="number" id="replyNumber" min="18" max="45" />
+        return <input placeholder={this.props.placeholder} onChange={this.onChangeHandler.bind(this)} type="number" id="replyNumber" min="18" max="45" />
     }
 }
 

@@ -46,9 +46,9 @@ class User extends React.Component {
         if(this.state.editMode){
             this.props.handleSave({
                 id: this.props.id,
-                name: this.state.name,
-                gender: this.state.gender,
-                age: this.state.age
+                name: typeof(this.state.name) !== "undefined" && this.state.name.length != 0 ? this.state.name : this.props.name,
+                gender: typeof(this.state.gender) !== "undefined" ? this.state.gender : this.props.gender,
+                age: typeof(this.state.age) !== "undefined" ? parseFloat(this.state.age) > 45 ? 45 : this.state.age : this.props.age
             })
         }
     }
@@ -66,7 +66,7 @@ class User extends React.Component {
                 <td>{this.props.id}</td>
                 <td>{editMode ? <TextInput getter={this.getName.bind(this)} placeholder={this.props.name} className="form-control" /> : this.props.name}</td>
                 <td>{editMode ? <SelectOption getter={this.getGender.bind(this)} value={this.state.gender} className="form-control" /> : this.props.gender}</td>
-                <td>{editMode ? <NumberInput getter={this.getAge.bind(this)} value={this.state.age} className="form-control" /> : this.props.age}</td>
+                <td>{editMode ? <NumberInput getter={this.getAge.bind(this)} placeholder={this.props.age} value={this.state.age} className="form-control" /> : this.props.age}</td>
                 <td><button className={editBtnClass} onClick={this.handleEdit.bind(this)}></button></td>
                 <td><button className="btn-delete" onClick={this.props.handleClick}></button></td>
             </tr>
