@@ -6,7 +6,7 @@ class SelectOption extends React.Component {
     }
 
     render() {
-        return <select className="form-control" onChange={this.onChangeHandler.bind(this)}>
+        return <select onChange={this.onChangeHandler.bind(this)}>
                     <option data-hidden="true">Gender</option>
                     <option>Male</option>
                     <option>Female</option>

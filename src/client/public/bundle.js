@@ -22344,6 +22344,7 @@
 	            var classNames = __webpack_require__(/*! classnames */ 174);
 	            var isDisabled = !this.state.name || !this.state.gender || !this.state.age;
 	            var btnClass = classNames({
+	            	'btn-add': true,
 	                'btn-default': true,
 	                'disabled': isDisabled
 	            });

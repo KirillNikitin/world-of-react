@@ -1,7 +1,6 @@
 import React from 'react';
 import User from './user.jsx';
 import NewUser from './NewUser.jsx';
-import Popup from './Popup.jsx';
 
 class MainTable extends React.Component {
     constructor(props) {
