@@ -42,6 +42,7 @@ class NewUser extends React.Component {
         var classNames = require('classnames');
         var isDisabled = !this.state.name || !this.state.gender || !this.state.age;
         var btnClass = classNames({
+            'btn-add': true,
             'btn-default': true,
             'disabled': isDisabled
         });
