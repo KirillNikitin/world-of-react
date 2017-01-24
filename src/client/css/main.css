@@ -4,7 +4,7 @@
 .table>tfoot>tr>th,
 .table>thead>tr>td,
 .table>thead>tr>th {
-    padding: 5px 7px;
+    padding: 5px 7px 5px 12px;
     border: none;
     height: 50px;
     vertical-align: middle;
@@ -64,6 +64,10 @@
     height: 100%;
     width: 100%;
 }
+.table>tbody>tr>td input[type="text"] {
+    margin-left: 5px;
+    padding-left: 5px;
+}
 /*table.user-list {background-color: #eef3f9;}*/
 .btn-edit, .btn-delete, .btn-save {
     width: 31px;
@@ -85,4 +89,26 @@
 }
 .btn-save {
     background: url('../i/save.png')
+}
+.btn-add {
+    font-weight: 500;
+    color: white;
+    text-decoration: none;
+    padding: .6em 1em calc(.8em + 3px);
+    border-radius: 3px;
+    background-color: rgb(64,199,129);
+    box-shadow: box-shadow: 0px 2px 1px rgb(53,167,110);
+    text-shadow: 1px 1px 1px #555;
+    transition: 0.2s;
+    border-color: transparent;
+}
+.btn-add:hover { background: rgb(53, 167, 110); }
+.btn-add:active {
+  background: rgb(33,147,90);
+  box-shadow: 0px 2px 1px rgb(33,147,90);
+}
+.btn-add.disabled {
+    background-color: #e0e0e0;
+    box-shadow: none;
+    text-shadow: none;
 }
