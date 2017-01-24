@@ -46,22 +46,23 @@ class NewUser extends React.Component {
             'btn-default': true,
             'disabled': isDisabled
         });
+        var formControlClass = classNames({'form-control': true})
         return (
             <div className="new-user">
                 <div className="row">
                     <div className="col-md-5">
                         <div className="new-user__name">
-                            <TextInput getter={this.getName.bind(this)} value={this.state.name} className="form-control" />
+                            <TextInput getter={this.getName.bind(this)} value={this.state.name} className={formControlClass} />
                         </div>
                     </div>
                     <div className="col-md-5">
                         <div className="new-user__gender">
-                            <SelectOption getter={this.getGender.bind(this)} value={this.state.gender} className="form-control" />
+                            <SelectOption getter={this.getGender.bind(this)} value={this.state.gender} className={formControlClass} />
                         </div>
                     </div>
                     <div className="col-md-1">
                         <div className="new-user__age">
-                            <NumberInput getter={this.getAge.bind(this)} value={this.state.age} className="form-control" />
+                            <NumberInput getter={this.getAge.bind(this)} value={this.state.age} className={formControlClass} />
                         </div>
                     </div>
                     <div className="col-md-1">

@@ -8,7 +8,7 @@ class TextInput extends React.Component {
     }
 
     render () {
-        return <input placeholder={this.props.placeholder} onChange={this.onChangeHandler.bind(this)} type="text" value={this.props.value} />;
+        return <input placeholder={this.props.placeholder} onChange={this.onChangeHandler.bind(this)} type="text" value={this.props.value} className="form-control" />;
     }
 }
 
